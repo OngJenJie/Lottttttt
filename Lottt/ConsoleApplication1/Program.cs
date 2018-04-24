@@ -10,13 +10,18 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            // 宣告隨機變數
             Random rand = new Random();
-            int i = 0;
 
+            // 讓使用者輸入次數
             Console.WriteLine("請熟入你要刷幾次數字组：");
             int ans = int.Parse(Console.ReadLine());
-            for (i = 0; i < ans; i++)
+
+            // 限制次數
+            for (int i = 0; i < ans; i++)
             {
+
+                // 一次裡面設置了6個數字
                 int r1 = rand.Next(45, 90);
                 int r2 = rand.Next(45, 90);
                 int r3 = rand.Next(45, 90);
@@ -24,6 +29,7 @@ namespace ConsoleApplication1
                 int r5 = rand.Next(45, 90);
                 int r6 = rand.Next(45, 90);
 
+                // 輸出亂數結果
                 Console.WriteLine("╔═══════════════════════════════════════════════════════╗");
                 Console.WriteLine("║               [第{0:00}組]本周頭獎是:                     ║", i);
                 Console.WriteLine("╠════════╦════════╦════════╦════════╦════════╦══════════╣");
